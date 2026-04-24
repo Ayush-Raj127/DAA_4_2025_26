@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic DSA Visualizer - Linked List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1><span class="gradient-text">Linked List</span> Visualizer</h1>
+            <p>Interactive Data Structure & Algorithms demonstration</p>
+        </header>
+
+        <main>
+            <div class="controls-panel glassmorphism">
+                <div class="control-group">
+                    <input type="text" id="node-value" placeholder="Enter node value..." autocomplete="off">
+                </div>
+                <div class="control-actions">
+                    <button class="btn btn-primary" onclick="appendNode()">Append</button>
+                    <button class="btn btn-secondary" onclick="prependNode()">Prepend</button>
+                    <button class="btn btn-danger" onclick="popNode()">Pop (End)</button>
+                    <button class="btn btn-danger" onclick="shiftNode()">Shift (Start)</button>
+                </div>
+            </div>
+
+            <div class="visualization-area" id="visualization-area">
+                <!-- Nodes will be injected here dynamically -->
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
